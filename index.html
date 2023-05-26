@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>JokenPô 👾</title>
+  </head>
+  <body>
+    <main>
+      <section class="section One">
+        <h1>JokenPô</h1>
+        <div class="btn-player">
+          <button id="pedra" onClick="choiceHuman('pedra')">✊🏼</button>
+          <button id="papel" onClick="choiceHuman('papel')">✋🏼</button>
+          <button id="tesoura" onClick="choiceHuman('tesoura')">✌🏼</button>
+          <div class="player">
+            <p>
+              Máquina:
+              <span id="playedMachine" class="response" style="color: #13747d">
+              </span>
+            </p>
+            <p>
+              Jogador:<span
+                style="color: rgb(157, 46, 46)"
+                id="playedPerson"
+                class="response"
+              >
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <span style="color: coral">JO KEN PO...</span>
+      <section class="section Two">
+        <div class="estatistica">
+          <p style="color: rgb(0, 98, 255)">Empate:<span id="tie"> 0</span></p>
+          <p style="color: rgb(0, 255, 81)">
+            Jogador: <span id="human">0</span>
+          </p>
+          <p style="color: rgba(255, 72, 0, 0.748)">
+            Máquina: <span id="machine">0</span>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
